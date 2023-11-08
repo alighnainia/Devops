@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     environment:
       - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=root
+      - POSTGRES_PASSWORD=alienz200
       - POSTGRES_DB=devops
     ports:
       - 5434:5432
@@ -22,7 +22,7 @@ services:
       SPRING_APPLICATION_JSON: '{
         "spring.datasource.url" : "jdbc:postgresql://postgres:5432/devops",
         "spring.datasource.username" : "postgres",
-        "spring.datasource.password" : "root",
+        "spring.datasource.password" : "alienz200",
         "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.PostgreSQL81Dialect",
         "spring.jpa.hibernate.ddl-auto" : "update"
       }'
