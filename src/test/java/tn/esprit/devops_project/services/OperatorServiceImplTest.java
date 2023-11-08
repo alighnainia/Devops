@@ -16,9 +16,9 @@ import java.util.*;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
-@SpringBootTest
+@SpringBootTest(properties = "spring.config.name=application-test")
 @ExtendWith(MockitoExtension.class)
-@Transactional
+
 class OperatorServiceImplTest {
     @Autowired
     private OperatorServiceImpl operatorService;
